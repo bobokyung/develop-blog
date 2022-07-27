@@ -8,13 +8,14 @@
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<!-- Place favicon.ico in the root directory -->
 
-	<title>Home</title>
+	<title>BoBoZZang.com</title>
 
 	<link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link media="all" type="text/css" href="css/font-awesome.min.css" rel="stylesheet">
 	<link media="all" type="text/css" href="css/core.css" rel="stylesheet">
 	<link media="all" type="text/css" href="css/skins/red.css" rel="stylesheet">
 	<link media="all" type="text/css" href="css/custom.css" rel="stylesheet">
+	<script src="includeHTML.js"></script>
 </head>
 <body class="home" itemscope itemtype="http://schema.org/WebPage">
 
@@ -287,21 +288,16 @@
 			</div> <!-- .row -->
 		</div> <!-- .container -->
 	</div> <!-- #prefooter -->
+
 	
-	<footer id="footer" role="contentinfo">
-		<div class="container">
-			<div class="row">
-
-				<div class="copyright">&copy; BOBO</div>
-				<div class="attribution">Web Design by <a href="http://www.donnyburnside.com" title="Web Design by Donny Burnside" target="_blank">Donny Burnside</a>.</div>
-
-			</div> <!-- .row -->
-		</div> <!-- .container -->
-	</footer> <!-- #footer -->
+	<div include-html="./footer.html"></div>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script>
+		includeHTML( function () {});
+	</script>
 
 </body>
 </html>
